@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    /* #C84B31
+    #ECDBBA */
+}
+
+header{
+    background-color: black;
+    width: 100vw;
+    height: 800px;
+    position: relative;
+}
+
+nav{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 40px;
+    text-align: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+   padding-bottom: 5px;
+}
+
+nav a:hover{
+    color: #346751;
+    border-bottom: 3px solid #346751;
+
+}
+
+#me-img{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -150px;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#me-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
