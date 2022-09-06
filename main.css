@@ -4,6 +4,10 @@
     #ECDBBA */
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 header{
     background-color: black;
     width: 100vw;
@@ -12,30 +16,55 @@ header{
 }
 
 nav{
-    position: absolute;
+    position: fixed;
     width: 100%;
-    height: 50px;
-    top: 40px;
+    height: 70px;
+    top: 0;
+    left: 0;
     text-align: center;
+    z-index: 99;
+    background-color: #2C3639;
+    box-shadow: 0 7px 20px 0 rgb(0 0 0 / 20%);
 }
 
-nav a{
-    color: white;
-    text-decoration: none;
+#menu-bar{
+    list-style: none;
+    height: 100%;
+}
+
+#menu-bar li{
+    display: inline-block;
     margin-left: 10px;
     margin-right: 10px;
-   padding-bottom: 5px;
+    font-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 5px;
 }
 
-nav a:hover{
-    color: #346751;
+#menu-bar li:hover {
     border-bottom: 3px solid #346751;
+}
 
+.menu-link a{
+    color: white;
+    text-decoration: none;
+}
+
+header h1{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -300px;
+    width: 600px;
+    color: white;
+    z-index: 88;
+    text-align: center;
+    font-size: 100pt;
 }
 
 #me-img{
     position: absolute;
-    top: 100px;
+    top: 300px;
     left: 50%;
     margin-left: -150px;
     display: inline-block;
@@ -44,10 +73,74 @@ nav a:hover{
     border-radius: 50%;
     overflow: hidden;
     text-align: center;
+    cursor: pointer;
 }
 
 #me-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.img-tooltip{
+    position: absolute;
+    display: inline-block;
+    visibility: hidden;
+    top: 550px;
+    left: 56%;
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #346751;
+    z-index: 999;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 5px;
+}
+
+#me-img img:hover .img-tooltip{
+    visibility: visible;
+}
+
+header h2{
+    position: absolute;
+    width: 800px;;
+    top: 650px;
+    left: 50%;
+    margin-left: -400px;
+    color: white;
+    text-align: center;
+}
+
+main{
+    background-color: #191919;
+    width: 100%;
+    height: 3000px;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: transparent;
+}
+
+section h1{
+    position: absolute;
+    width: 200px;
+    color: white;
+    font-size: 30pt;
+    top: 50px;
+    left: 50%;
+    margin-left: -100px;
+}
+
+#about-skill{
+        position: absolute;
+        width: 200px;
+        color: white;
+        font-size: 20pt;
+        top: 150px;
+        left: 50%;
+        margin-left: -100px;
 }
