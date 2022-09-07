@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <title>Jisu, web developer</title>
 </head>
 <body>
@@ -12,24 +17,21 @@
         <nav>
             <ul id="menu-bar">
                 <li class="menu-link">
-                    <a href="#intro-home">HOME</a>
+                    <a id="home-link" href="#intro-home">HOME</a>
                 </li>
                 <li class="menu-link">
-                    <a href="#section-about">ABOUT</a>
+                    <a id="about-link" href="#section-about">ABOUT</a>
                 </li>
                 <li class="menu-link">
-                    <a href="#section-project">PROJECT</a>
-                </li>
-                <li class="menu-link">
-                    <a href="#section-contact">CONTACT</a>
+                    <a id="project-link" href="#section-project">PROJECT</a>
                 </li>
             </ul>
         </nav>
         <h1>JISU KIM</h1>
         <div id="me-img">
-            <img src="img/me.gif">
+            <img class="emoji-img" src="img/me.gif">
         </div>
-        <span class="img-tooltip">filp me!</span>
+        <span class="img-tooltip">click me!</span>
         <h2>
             初めまして。金智秀（キム・ジス）と申します。<br>
             プログラミングの勉強は2022年4月から始まり、ひよこ開発者です。
@@ -41,37 +43,120 @@
         <article>
             <section id="section-about">
                 <h1>About Me</h1>
-                <div id="about-skill">
-                    <span>My Skills</span>
-                    <span>Front-end</span>
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Java Script</span>
-                    <span>Back-end</span>
-                    <span>Java</span>
-                    <span>Spring</span>
-                    <span>Python</span>
-                    <span>Ruby</span>
-                    <span>Rails</span>
-                    <span>Data-base</span>
-                    <span>Oracle DataBase</span>
-                    <span>My SQL</span>
+                <div id="about-myintro">
+                    初めまして。<p>
+                    飛びたい、ひよこ開発者、キム・ジスと申します。<p>
+                    2022年4月8日~9月23日、<br>
+                    約6か月間スクールでJAVAを軸にプログラミング勉強をしてまりました。<p>
+                    ゼロから作っていくプログラミングの魅力を感じており、<br>
+                    頑張って勉強しております。<p>
+                    6か月の間で、3つのプログラムを作りました。<p>
+                    大したことではありませんが、よろしくお願いいたします。
+                </div>
+                <h2>My Skills</h2>
+                <div id="skill-box">
+                    <div class="skill-detail">
+                        <span>#HTML</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#CSS</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#JavaScript</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#Java</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#Spring</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#Python</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#Ruby</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#Rails</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#Oracle DataBase</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#My SQL</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#GIT</span>
+                    </div>
+                    <div class="skill-detail">
+                        <span>#Github</span>
+                    </div>
                 </div>
             </section>
         </article>
         <article>
             <section id="section-project">
                 <h1>Project</h1>
-            </section>
-        </article>
-        <article>
-            <section id="section-contact">
-                <h1>Contact</h1>
+                <div class="project1">
+                    <div>
+                        <img> 
+                    </div>
+                    <div>
+                        <div>
+                            <div>project 1</div>
+                            <div>2022.09.08 ~ 2022.09.23</div>
+                        </div>
+                        <div>
+                            <span>#HTML</span>
+                            <span>#CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project2">
+                    <div>
+                        <img> 
+                    </div>
+                    <div>
+                        <div>
+                            <div>project 2</div>
+                            <div>2022.08.08 ~ 2022.09.08</div>
+                        </div>
+                        <div>
+                            <span>#HTML</span>
+                            <span>#CSS</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="project3">
+                    <div>
+                        <img> 
+                    </div>
+                    <div>
+                        <div>
+                            <div>project 3</div>
+                            <div>2022.06.08 ~ 2022.07.08</div>
+                        </div>
+                        <div>
+                            <span>#HTML</span>
+                            <span>#CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-continue">to be continued...</div>
             </section>
         </article>
     </main>
     <footer>
-
+        <div class="email">
+           tlawl912@gmail.com
+        </div>
+        <div class="git" onclick="window.open('https://github.com/jiguiscoming')">
+            <img src="img/github.png">
+        </div>
+        <div class="footer-line"></div>
+        <div class="copyright">copyright 2022. Made by Jisu Kim</div>
+        <a id="topbtn" href="#intro-home">▲<br>top</a>
     </footer>
 </body>
 </html>
