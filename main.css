@@ -114,6 +114,10 @@ main{
     height: 3000px;
 }
 
+#section-about{
+    height: 900px;
+}
+
 section{
     position: relative;
     width: 100%;
@@ -133,12 +137,12 @@ section h1{
 
 #about-myintro{
     position: absolute;
-    width: 700px;
+    width: 70%;
     color: white;
     font-size: 16pt;
     top: 150px;
     left: 50%;
-    margin-left: -350px;
+    transform: translateX(-50%);
 }
 
 section h2{
@@ -156,12 +160,12 @@ section h2{
 
 #skill-box{
         position: absolute;
-        width: 1100px;
+        width: 70%;
         color: white;
         font-size: 15pt;
         top: 550px;
         left: 50%;
-        margin-left: -550px;
+        transform: translateX(-50%);
 }
 
 .skill-detail{
@@ -170,7 +174,7 @@ section h2{
     margin: 15px;
     border-radius: 10px;
     height: 40px;
-    width: 180px;
+    width: 28%;
     cursor: pointer;
     display: inline-block;
     padding-top: 10px;
@@ -191,7 +195,7 @@ section h2{
     transform: translateX(-50%);
     color: white;
     width: 80%;
-    height: 500px;
+    height: 700px;
     border-bottom: 2px solid #2C3639;
 }
 
@@ -199,14 +203,125 @@ section h2{
     display: inline-block;
 }
 
+.slideshow-box{
+    position: absolute;
+    top: 100px;
+    width: 60%;
+    height: 500px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 450px;
+    background-color: white;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    background-color: #2C3639;
+    opacity: 0.7;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    background-color: #346751;
+    border-radius: 10px;
+    margin: 5px;
+    opacity: 0.7;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.project-content{
+    position: absolute;
+    top: 90px;
+    left: 65%;
+    width: 35%;
+    height: 300px;
+  }
+
 .project2{
     position: absolute;
-    top: 700px;
+    top: 900px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
     width: 80%;
-    height: 500px;
+    height: 700px;
     border-bottom: 2px solid #2C3639;
 }
 
@@ -214,26 +329,12 @@ section h2{
     display: inline-block;
 }
 
-.project3{
-    position: absolute;
-    top: 1250px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    width: 80%;
-    height: 500px;
-    border-bottom: 2px solid #2C3639;
-}
-
-.project3 > div{
-    display: inline-block;
-}
-
 .project-continue{
     position: absolute;
     top: 1800px;
     left: 50%;
-    color: white;transform: translateX(-50%);
+    color: white;
+    transform: translateX(-50%);
     width: 80%;
     height: 50px;
 }
